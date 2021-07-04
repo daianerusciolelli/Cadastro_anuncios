@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body style="background-color: rgb(236, 234, 234);">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="images/fundo.png" style="width: 75px; height: 50px; margin-left: 20px;">
+  </nav>
+
+  <h1 class="title" style="text-align: center;">O que você está anunciando?</h1>
+
+  <div class="content-wrapper" style="width: 500px; height: 500px; margin-left: 710px;">
+
+    <div class="container">
+
+      <input class="form-control form-control-lg" type="text" placeholder="Título"
+        aria-label=".form-control-lg example">
+      <label for=""></label>
+      <input class="form-control" type="text" placeholder="Cliente" aria-label="default input example">
+      <label for="email">Data de inicio do anúncio</label>
+      <input class="form-control form-control-sm" type="date" placeholder="Data de inicio"
+        aria-label=".form-control-sm example">
+      <label for="email">Data de termino do anúncio</label>
+      <input class="form-control form-control-sm" type="date" placeholder="Data de termino"
+        aria-label=".form-control-sm example">
+      <label for=""></label>
+      <input class="form-control form-control-sm" type="text" id="dinheiro"
+        placeholder="Quanto vai investir?" aria-label=".form-control-sm example">
+        <button type="button" class="btn btn-success" style="margin-top: 20px;">Cadastrar</button>
+        <button type="button" class="btn btn-danger"style="margin-top: 20px;">Cancelar</button>
+    </div>
+    
+    
+
+  </div>
+
+</body>
+
+<script type="text/javascript">
+  $("#dinheiro").mask("R$0.000,00");
+  </script>
+
+
+</html>
